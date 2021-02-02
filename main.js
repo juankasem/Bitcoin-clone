@@ -1,1 +1,0 @@
-const { Blockchain, Transaction} = require('./src/blockchain');
