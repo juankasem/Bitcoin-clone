@@ -1,0 +1,26 @@
+{
+  "name": "bitcoin-clone-nodejs",
+  "version": "1.0.0",
+  "description": "Bitcoin clone server with Node.js",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juankasem/Bitcoin-clone.git"
+  },
+  "keywords": [
+    "bitcoin"
+  ],
+  "author": "Juan kasem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juankasem/Bitcoin-clone/issues"
+  },
+  "homepage": "https://github.com/juankasem/Bitcoin-clone#readme",
+  "dependencies": {
+    "crypto-js": "^4.0.0",
+    "elliptic": "^6.5.3"
+  }
+}
