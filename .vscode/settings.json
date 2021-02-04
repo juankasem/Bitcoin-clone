@@ -1,0 +1,12 @@
+{
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+          "javascript": "javascriptreact",
+          "typescript": "typescriptreact",
+      },
+    "emmet.excludeLanguages": [
+
+
+        "markdown"
+    ]
+}
