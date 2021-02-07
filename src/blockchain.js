@@ -1,4 +1,3 @@
-// const crypto = require('crypto');
 const SHA256 = require('crypto-js/sha256');
 const EC = require('elliptic').ec
 const ec = new EC('secp256k1');
@@ -11,7 +10,7 @@ class Transaction{
         this.timestamp = Date.now();
     }
 
-      /**
+     /**
    * Creates a SHA256 hash of the transaction
    *
    * @returns {string}
@@ -172,9 +171,9 @@ class Blockchain{
           }
 
         //Checks that the amount sent is not greater than existing balance
-        if (this.getBalanceOfAddress(transaction.fromAddress) < transaction.amount){
-          throw new Error('Not enough balance');
-        }
+        // if (this.getBalanceOfAddress(transaction.fromAddress) < transaction.amount){
+        //   throw new Error('Not enough balance');
+        // }
 
         this.pendingTransactions.push(transaction);
     }
