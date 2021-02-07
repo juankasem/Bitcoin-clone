@@ -1,6 +1,6 @@
 {
   "name": "bitcoin-clone-nodejs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Bitcoin clone server with Node.js",
   "main": "src/blockchain.js",
   "scripts": {
