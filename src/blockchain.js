@@ -28,7 +28,7 @@ class Transaction{
    */
     signTransaction(signingKey){
         if(signingKey.getPublic('hex') !== this.fromAddress){
-            throw new Error('You cannot dign transaction for other wallets.');
+            throw new Error('You cannot sign transaction for other wallets.');
         }
         const hashTx = this.calculateHash();
         const sig = signingKey.sign(hashTx, 'base64');
@@ -49,7 +49,7 @@ class Transaction{
 
 
       if(!this.signature || this.signature.length == 0){
-          throw new Error('No Signaturre in this transaction');
+          throw new Error('No Signature in this transaction');
       }
 
       const publicKey = ec.keyFromPublic(this.fromAddress, 'hex');
